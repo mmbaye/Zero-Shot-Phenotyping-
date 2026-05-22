@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://python.org)
 [![Platform](https://img.shields.io/badge/Platform-Google%20Colab-orange.svg)](https://colab.research.google.com)
 
-> **Paper:** *SAM-Based High-Throughput Phenotyping Reveals Genotypic Variation in Sorghum Panicle and Leaf Architecture Across Eight Varieties*
+> **Paper:** *Foudation AI-Based High-Throughput Phenotyping Reveals Genotypic Variation in Sorghum Panicle and Leaf Architecture Across Eight Varieties*
 > Submitted to **Plant Phenomics** (Elsevier/AAAS)
 
 ---
@@ -21,13 +21,11 @@ This repository contains all code and analysis scripts for a pipeline combining 
 - **LiDAR vs manual validation**: R² = 0.9992, MAE = 0.42 cm
 - **Novel quality metric**: Completeness ratio C = A / (π × L/2 × l/2) × 100
 
-
-
 ---
 
 ## Requirements
 
-### Python (Google Colab — GPU T4 recommended)
+### Python (Google Colab  GPU T4 recommended)
 ```
 segment-anything
 torch torchvision
@@ -53,20 +51,15 @@ install.packages(c(
   "ggrepel"
 ))
 ```
-
 ---
 
 ## Calibration
-
-> ⚠️ **Critical:** The tile reference must be physically measured before each session.
 
 ```python
 # In SAM_pipeline_V3.ipynb
 TAILLE_CARREAU_CM = 15.   
 ```
-
 The tile dimension was verified using iPad Pro LiDAR, correcting an initial assumption of 15 cm (correction factor: ×1.632 on all L, l measurements; ×2.663 on areas).
-
 ---
 
 ## Pipeline overview
@@ -145,4 +138,5 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## Contact
 
-## Corresponding author email modou.mbaye@isra.sn 
+## Corresponding author email  
+ modou.mbaye@isra.sn 
